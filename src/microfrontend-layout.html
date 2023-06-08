@@ -1,4 +1,4 @@
-<single-spa-router mode="hash">
+<single-spa-router>
   <!--
 
     This is the single-spa Layout Definition for your microfrontends.
@@ -18,6 +18,16 @@
   -->
 
   <main>
+    <nav>
+      <ul>
+        <li>
+          <a href="/angular1">angular1</a>
+        </li>
+        <li>
+          <a href="/angular2">angular2</a>
+        </li>
+      </ul>
+    </nav>
     <redirect from="/" to="/angular1"></redirect>
     <route path="angular2">
       <application name="@app/angular2"></application>
